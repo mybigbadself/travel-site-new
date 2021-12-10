@@ -1,12 +1,11 @@
-body{
-    color: pink;
-}
+@import 'normalize.css';
+@import 'base/_global';
+@import 'base/_variables.css';
+@import 'base/_mixins.css';
+@import "modules/_large-hero.css";
+@import 'modules/_btn.css';
+@import 'modules/_wrapper.css';
+@import 'modules/_page-section.css';
+@import 'modules/_headline.css';
+@import 'modules/_row.css';
 
-$mainBlue: #2f5572;
-
-
-.large-hero{
-    h2{
-        color: $mainBlue;
-    }
-}
