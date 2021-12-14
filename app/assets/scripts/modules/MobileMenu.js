@@ -3,6 +3,7 @@ class MobileMenu{
     constructor() {
         this.menuIcon = document.querySelector('.site-header__menu-icon')
         this.menuContent = document.querySelector('.site-header__menu-content')
+        this.siteHeader = document.querySelector('.site-header')
         this.events() // call the function / method that you want to start with.
     }
 
@@ -15,6 +16,8 @@ class MobileMenu{
     toggleTheMenu() {
         console.log('Icon clicked !')
         this.menuContent.classList.toggle('site-header__menu-content--is-visable')
+        this.siteHeader.classList.toggle('site-header--is-expanded')
+        this.menuIcon.classList.toggle('site-header__menu-icon--close-x')
     }
 
 }
